@@ -35,7 +35,7 @@ public class ProfileDetails1 extends AppCompatActivity {
         if (actionBar != null){
             actionBar.hide();
         }
-        Intent intentGoToProfileDetails1 = getIntent();
+        Intent intent = getIntent();
 
         textViewAge = findViewById(R.id.textViewAgeNumberId);
         seekBarAge = findViewById(R.id.seekBarAgeId);
@@ -105,7 +105,7 @@ public class ProfileDetails1 extends AppCompatActivity {
     }
 
     public void openProfileDetailsActivity2(View view) {
-        Intent intent = new Intent();
+        Intent intent = new Intent(this, ProfileDetails2.class);
         startActivity(intent);
     }
 }

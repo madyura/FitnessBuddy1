@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
    }
 
     public void openProfileDetails1Activity(View view) {
-        Intent intentGoToProfileDetails1 = new Intent(this, ProfileDetails1.class);
-        startActivity(intentGoToProfileDetails1);
+        Intent intent = new Intent(this, ProfileDetails1.class);
+        startActivity(intent);
 
 }
 }

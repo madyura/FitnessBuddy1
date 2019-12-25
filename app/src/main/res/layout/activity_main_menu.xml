@@ -6,25 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".MainMenu">
 
-    <Button
-        android:id="@+id/button"
+    <TextView
+        android:id="@+id/textViewOpinion2"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="Button"
+        android:background="@android:color/holo_orange_dark"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/textViewOpinion3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guideline3"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
-    <Button
-        android:id="@+id/button2"
+    <TextView
+        android:id="@+id/textViewOpinion3"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="Button"
+        android:background="@android:color/holo_purple"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@id/guideline3"/>
+        app:layout_constraintStart_toEndOf="@id/textViewOpinion2"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+         />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"

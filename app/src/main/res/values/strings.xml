@@ -16,4 +16,13 @@
     <string name="maintenance">Maintenance</string>
     <string name="muscle_gain">Muscle gain</string>
     <string name="activity_level">Weekly activity level</string>
+    <string name="finish">finish</string>
+    <string name="lightly_active">Lightly active</string>
+    <string name="moderately_active">Moderately active</string>
+    <string name="very_active">Very active</string>
+    <string name="extra_active">Extra active</string>
+    <string name="lightly_active_desc">Moderate exercise but sedentary job</string>
+    <string name="moderately_active_desc">Intense exercise but sedentary job</string>
+    <string name="very_active_desc">Moderate exercise and active job</string>
+    <string name="extra_active_desc">Intense exercise and active job</string>
 </resources>

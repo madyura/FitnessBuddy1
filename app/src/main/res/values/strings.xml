@@ -25,4 +25,6 @@
     <string name="moderately_active_desc">Intense exercise but sedentary job</string>
     <string name="very_active_desc">Moderate exercise and active job</string>
     <string name="extra_active_desc">Intense exercise and active job</string>
+    <string name="years">years</string>
+    <string name="year">year</string>
 </resources>

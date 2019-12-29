@@ -103,73 +103,61 @@
         app:layout_constraintGuide_percent="0.9" />
 
 
-    <Button
-        android:id="@+id/buttonLightlyActiveId"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:padding="24sp"
-        android:text="@string/lightly_active"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/buttonModeratelyActiveId"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <Button
-        android:id="@+id/buttonModeratelyActiveId"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:padding="24sp"
-        android:text="@string/moderately_active"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/buttonLightlyActiveId"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <Button
-        android:id="@+id/buttonVeryActiveId"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:padding="24sp"
-        android:text="@string/very_active"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/buttonExtraActiveId"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonLightlyActiveId" />
-
-    <Button
-        android:id="@+id/buttonExtraActiveId"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:padding="24sp"
-        android:text="@string/extra_active"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/buttonVeryActiveId"
-        app:layout_constraintTop_toBottomOf="@+id/buttonModeratelyActiveId" />
-
     <TextView
-        android:id="@+id/textViewDescriptonOfActivityLevelId"
+        android:id="@+id/textViewDescriptionOfActivityLevelId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/lightly_active_desc"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonExtraActiveId" />
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupActivityLevel" />
 
     <Button
         android:id="@+id/buttonFinishId"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="Button"
-        android:onClick="finishProfileDetailsButton"
         android:gravity="center"
+        android:onClick="finishProfileDetailsButton"
+        android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupActivityLevel"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <RadioButton
+            android:id="@+id/radioButtonLightlyActiveId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lightly_active" />
+
+        <RadioButton
+            android:id="@+id/radioButtonModeratelyActiveId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/moderately_active" />
+
+        <RadioButton
+            android:id="@+id/radioButtonVeryActiveId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/very_active" />
+
+        <RadioButton
+            android:id="@+id/radioButtonExtraActiveId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/extra_active" />
+    </RadioGroup>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

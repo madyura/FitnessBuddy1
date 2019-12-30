@@ -10,9 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainMenu"></activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".ProfileDetails2" />
         <activity android:name=".ProfileDetails1" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainMenuTraining">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

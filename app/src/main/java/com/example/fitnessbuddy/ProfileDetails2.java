@@ -3,7 +3,9 @@ package com.example.fitnessbuddy;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
@@ -28,7 +30,7 @@ public class ProfileDetails2 extends AppCompatActivity {
     private int sexCoeficient;
     private int caloriesPerDay = 1;
     private double goalCoeficient = 1;
-
+    private boolean wasEnded = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -101,13 +103,13 @@ public class ProfileDetails2 extends AppCompatActivity {
     }
 
     public void finishProfileDetailsButton(View view) {
-
         caloriesPerDay = (int) ((10 * weight + 6.25 * height - 5 * age + sexCoeficient) * activityCoeficient * goalCoeficient);
         textViewDescriptionOfActivityLevel = findViewById(R.id.textViewDescriptionOfActivityLevelId);
         textViewDescriptionOfActivityLevel.setText(String.format("%s", caloriesPerDay));
-
-//        Intent intent = new Intent(this, MainMenu.class);
-//        startActivity(intent);
-
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        preferences.edit().putBoolean("ended", wasEnded); //this will be needed to check if application was opened before
+        preferences.edit().putInt("calories", caloriesPerDay);
+         Intent intent = new Intent(this, MainMenu.class);
+         startActivity(intent);
     }
 }

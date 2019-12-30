@@ -27,4 +27,19 @@
     <string name="extra_active_desc">Intense exercise and active job</string>
     <string name="years">years</string>
     <string name="year">year</string>
+    <string name="today">Today</string>
+    <string name="meal">meal</string>
+    <string name="training">training</string>
+    <string name="full_body">Full body</string>
+    <string name="legs_back">Legs and back</string>
+    <string name="chest">Chest and arms</string>
+    <string name="change">Change</string>
+    <string name="reset">reset</string>
+    <string-array name="training_full_body">
+        <item>1. back</item>
+        <item>2. slack</item>
+        <item>3. hack</item>
+        <item>4. plak</item>
+        <item>5. zak</item>
+    </string-array>
 </resources>

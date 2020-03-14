@@ -1,18 +1,18 @@
-package com.example.fitnessbuddy;
+package com.example.fitnessbuddy.FirstLogin;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.fitnessbuddy.R;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
         setContentView(R.layout.activity_main);
         Intent intent = getIntent();
    }

@@ -35,6 +35,9 @@
     <string name="chest">Chest and arms</string>
     <string name="change">Change</string>
     <string name="reset">reset</string>
+    <string name="lunch">lunch</string>
+    <string name="breakfast">breakfast</string>
+    <string name="dinner">dinner</string>
     <string-array name="training_full_body">
         <item>1. back</item>
         <item>2. slack</item>

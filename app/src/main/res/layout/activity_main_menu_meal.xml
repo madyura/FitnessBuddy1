@@ -2,10 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/guidelineId"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainMenu">
+    tools:context=".MainMenuMeal">
 
     <TextView
         android:id="@+id/textViewFitnessBuddyId"
@@ -36,7 +35,6 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.1" />
 
-
     <TextView
         android:id="@+id/textViewButtonMealId"
         android:layout_width="0dp"
@@ -47,12 +45,10 @@
         android:textAllCaps="true"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
-        android:onClick="openMainMenuMeal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/textViewButtonTrainingId"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline3" />
-
+        app:layout_constraintTop_toTopOf="@+id/guidelineBottom" />
     <TextView
         android:id="@+id/textViewButtonTrainingId"
         android:layout_width="0dp"
@@ -63,94 +59,73 @@
         android:textAllCaps="true"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
+        android:onClick="openMainMenuTraining"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/textViewButtonMealId"
-        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+        app:layout_constraintTop_toTopOf="@+id/guidelineBottom" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
+        android:id="@+id/guidelineBottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.9" />
 
     <TextView
-        android:id="@+id/textViewToday"
+        android:id="@+id/textViewMealGoalId"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/today"
-        android:textAllCaps="true"
-        android:textSize="32sp"
+        android:layout_marginTop="32dp"
+        android:text="Goal:"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline10" />
 
     <TextView
-        android:id="@+id/textViewTrainingDescriptionId"
+        android:id="@+id/textViewMealProteinsId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="@string/full_body"
+        android:text="Proteins:"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewToday" />
-
-    <Button
-        android:id="@+id/buttonChangeTrainingId"
-        android:layout_width="51dp"
-        android:layout_height="34dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:backgroundTintMode="screen"
-        android:text="@string/change"
-        app:layout_constraintStart_toEndOf="@+id/textViewTrainingDescriptionId"
-        app:layout_constraintTop_toBottomOf="@+id/textViewToday" />
-
-    <ListView
-        android:id="@+id/listViewTraining"
-        android:layout_width="327dp"
-        android:layout_height="184dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:entries="@array/training_full_body"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTrainingDescriptionId" />
-
-    <Button
-        android:id="@+id/buttonStartTrainingId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Start training"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listViewTraining" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewMealGoalId" />
 
     <TextView
-        android:id="@+id/textViewDoneTrainingsId"
+        android:id="@+id/textViewMealCarbsId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Trainings done: "
-        android:textSize="18sp"
+        android:text="Carbs:"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonStartTrainingId" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewMealProteinsId" />
+
+    <TextView
+        android:id="@+id/textViewMealFatId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Fat:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMealCarbsId" />
 
     <Button
-        android:id="@+id/buttonResetCountOfDoneTrainingsId"
-        android:layout_width="103dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/reset"
-        android:textSize="10sp"
+        android:id="@+id/buttonSeeMenuId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="see menu"
+        android:onClick="openSelectTypeOfMeal"
+        app:layout_constraintBottom_toTopOf="@+id/textViewButtonTrainingId"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewDoneTrainingsId" />
-
+        app:layout_constraintTop_toBottomOf="@+id/textViewMealFatId" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

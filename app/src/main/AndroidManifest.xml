@@ -11,7 +11,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".MainMenuTraining">
+        <activity android:name=".Settings" />
+        <activity android:name=".GeneratedTraining" />
+        <activity android:name=".firstlogin.MainActivity" />
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,12 +22,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".SelectTypeOfMeal" />
-        <activity android:name=".FirstLogin.MainActivity" />
-        <activity android:name=".FirstLogin.ProfileDetails2" />
-        <activity android:name=".FirstLogin.ProfileDetails1" />
+        <activity android:name=".MainMenuTraining" />
+        <activity android:name=".firstlogin.ProfileDetails2" />
+        <activity android:name=".firstlogin.ProfileDetails1" />
         <activity android:name=".MainMenuMeal" />
-
-
     </application>
 
 </manifest>

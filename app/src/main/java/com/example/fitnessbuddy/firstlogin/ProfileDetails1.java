@@ -1,4 +1,4 @@
-package com.example.fitnessbuddy.FirstLogin;
+package com.example.fitnessbuddy.firstlogin;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,19 +16,14 @@ import com.example.fitnessbuddy.R;
 public class ProfileDetails1 extends AppCompatActivity {
 
     private TextView textViewAge;
-    private SeekBar seekBarAge;
-    private int age;
-
     private TextView textViewHeight;
-    private SeekBar seekBarHeight;
-    private int height;
-
     private TextView textViewWeight;
+    private SeekBar seekBarAge;
+    private SeekBar seekBarHeight;
     private SeekBar seekBarWeight;
+    private int age;
+    private int height;
     private int weight;
-
-
-
     private int sexCoeficient = 5;
     private RadioButton radioButtonChosenSex;
     private RadioGroup radioGroupSex;
@@ -42,14 +37,22 @@ public class ProfileDetails1 extends AppCompatActivity {
 
         textViewAge = findViewById(R.id.textViewAgeNumberId);
         seekBarAge = findViewById(R.id.seekBarAgeId);
+        textViewHeight = findViewById(R.id.textViewHeightNumberId);
+        seekBarHeight = findViewById(R.id.seekBarHeightId);
+        textViewWeight = findViewById(R.id.textViewWeightNumberId);
+        seekBarWeight = findViewById(R.id.seekBarWeightId);
+        radioGroupSex = findViewById(R.id.radioGroupSex);
+
         seekBarAge.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 age = seekBarAge.getProgress();
                 if (age != 1){
-                textViewAge.setText(age + " " + getString(R.string.years));
+
+                textViewAge.setText(String.format("%s years", age));
+
                 }else{
-                    textViewAge.setText(age + " " + getString(R.string.year));
+                    textViewAge.setText(String.format("%s year", age));
                 }
             }
             @Override
@@ -60,13 +63,11 @@ public class ProfileDetails1 extends AppCompatActivity {
             }
         });
 
-        textViewHeight = findViewById(R.id.textViewHeightNumberId);
-        seekBarHeight = findViewById(R.id.seekBarHeightId);
         seekBarHeight.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 height = seekBarHeight.getProgress();
-                textViewHeight.setText(height + " cm");
+                textViewHeight.setText(String.format("%s cm", height));
             }
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
@@ -76,13 +77,11 @@ public class ProfileDetails1 extends AppCompatActivity {
             }
         });
 
-        textViewWeight = findViewById(R.id.textViewWeightNumberId);
-        seekBarWeight = findViewById(R.id.seekBarWeightId);
         seekBarWeight.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 weight = seekBarWeight.getProgress();
-                textViewWeight.setText(weight + " kg");
+                textViewWeight.setText(String.format("%s kg", weight));
             }
 
             @Override
@@ -93,7 +92,6 @@ public class ProfileDetails1 extends AppCompatActivity {
             }
         });
 
-        radioGroupSex = findViewById(R.id.radioGroupSex);
         radioGroupSex.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -101,12 +99,10 @@ public class ProfileDetails1 extends AppCompatActivity {
             switch (radioButtonChosenSex.getId()){
                 case R.id.radioButtonMaleId: {
                     sexCoeficient = 5;
-                    Toast.makeText(getApplicationContext(), Integer.toString(sexCoeficient), Toast.LENGTH_SHORT).show();
                 }
                 break;
                 case R.id.radioButtonFemaleId: {
                     sexCoeficient = -161;
-                    Toast.makeText(getApplicationContext(), Integer.toString(sexCoeficient), Toast.LENGTH_SHORT).show();
                 }
             }
             }
@@ -115,11 +111,15 @@ public class ProfileDetails1 extends AppCompatActivity {
     }
 
     public void openProfileDetailsActivity2(View view) {
+        if (((age != 0) && (height != 0) && (weight != 0) && (sexCoeficient != 0))){
         Intent intent = new Intent(this, ProfileDetails2.class);
         intent.putExtra("age", age);
         intent.putExtra("height", height);
         intent.putExtra("weight", weight);
         intent.putExtra("sexCoeficient", sexCoeficient);
         startActivity(intent);
+        } else {
+            Toast.makeText(this, "Enter all fields", Toast.LENGTH_SHORT).show();
+        }
     }
 }

@@ -1,4 +1,4 @@
-package com.example.fitnessbuddy.FirstLogin;
+package com.example.fitnessbuddy.firstlogin;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -22,7 +22,6 @@ public class ProfileDetails2 extends AppCompatActivity {
     private TextView textViewDescriptionOfActivityLevel;
     private RadioGroup fitnessGoal;
     private RadioButton chosenFitnessGoal;
-
     private RadioGroup radioGroupActivityLevel;
     private RadioButton chosenActivityLevel;
     private double activityCoeficient;
@@ -34,6 +33,7 @@ public class ProfileDetails2 extends AppCompatActivity {
     private int caloriesPerDay = 1;
     private double goalCoeficient = 1;
     private boolean wasEnded = true;
+    private String goal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +51,10 @@ public class ProfileDetails2 extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Something went wrong", Toast.LENGTH_LONG).show();
         }
 
+        textViewDescriptionOfActivityLevel = findViewById(R.id.textViewDescriptionOfActivityLevelId);
         fitnessGoal = findViewById(R.id.radioGroupFitnessGoal);
+        radioGroupActivityLevel = findViewById(R.id.radioGroupActivityLevel);
+
         fitnessGoal.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -59,22 +62,25 @@ public class ProfileDetails2 extends AppCompatActivity {
                 switch (chosenFitnessGoal.getId()){
                     case R.id.radioButtonFatLossId: {
                         goalCoeficient = 0.8;
+                        goal = getString(R.string.fat_loss);
                     }
                     break;
                     case R.id.radioButtonMaintenanceId:{
-                        goalCoeficient= 1;
+                        goalCoeficient = 1;
+                        goal = getString(R.string.maintenance);
                     }
                     break;
 
                     case R.id.radioButtonMuscleGainId: {
                         goalCoeficient = 1.2;
+                        goal = getString(R.string.muscle_gain);
                     }
                     break;
                 }
             }
         });
 
-        radioGroupActivityLevel = findViewById(R.id.radioGroupActivityLevel);
+
         radioGroupActivityLevel.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -82,18 +88,23 @@ public class ProfileDetails2 extends AppCompatActivity {
                 switch (chosenActivityLevel.getId()){
                     case R.id.radioButtonLightlyActiveId: {
                         activityCoeficient = 1.2;
+                        textViewDescriptionOfActivityLevel.setText(R.string.lightly_active_desc);
+
                     }
                     break;
                     case R.id.radioButtonModeratelyActiveId: {
                         activityCoeficient = 1.375;
+                        textViewDescriptionOfActivityLevel.setText(R.string.moderately_active_desc);
                     }
                     break;
                     case R.id.radioButtonVeryActiveId: {
                         activityCoeficient = 1.55;
+                        textViewDescriptionOfActivityLevel.setText(R.string.very_active_desc);
                     }
                     break;
                     case R.id.radioButtonExtraActiveId: {
                         activityCoeficient = 1.725;
+                        textViewDescriptionOfActivityLevel.setText(R.string.extra_active_desc);
                     }
                 }
             }
@@ -106,13 +117,21 @@ public class ProfileDetails2 extends AppCompatActivity {
     }
 
     public void finishProfileDetailsButton(View view) {
+        if (goal != null && activityCoeficient != 0){
         caloriesPerDay = (int) ((10 * weight + 6.25 * height - 5 * age + sexCoeficient) * activityCoeficient * goalCoeficient);
         textViewDescriptionOfActivityLevel = findViewById(R.id.textViewDescriptionOfActivityLevelId);
         textViewDescriptionOfActivityLevel.setText(String.format("%s", caloriesPerDay));
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        preferences.edit().putBoolean("ended", wasEnded); //this will be needed to check if application was opened before
-        preferences.edit().putInt("calories", caloriesPerDay);
+        preferences.edit().putBoolean("ended", wasEnded).apply(); //this will be needed to check if application was opened before
+        preferences.edit().putInt("calories", caloriesPerDay).apply();
+        preferences.edit().putInt("weight", weight).apply();
+        preferences.edit().putInt("height", height).apply();
+        preferences.edit().putInt("age", age).apply();
+        preferences.edit().putString("goalCoeficient", goal).apply();
+        preferences.edit().putBoolean("wasOpened", true).apply();
          Intent intent = new Intent(this, MainMenuTraining.class);
-         startActivity(intent);
+         startActivity(intent);} else {
+            Toast.makeText(this, "Enter all fields", Toast.LENGTH_SHORT).show();
+        }
     }
 }

@@ -5,7 +5,7 @@
     android:id="@+id/guidelineId"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainMenu">
+    tools:context=".MainMenuTraining">
 
     <TextView
         android:id="@+id/textViewFitnessBuddyId"
@@ -19,15 +19,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/menuButtonId"
-        android:layout_width="41dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="16dp"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/guideline10"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.47" />
+        android:id="@+id/settingsButtonId"
+        android:layout_width="44dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ic_settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline10"
@@ -47,7 +46,6 @@
         android:textAllCaps="true"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
-        android:onClick="openMainMenuMeal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/textViewButtonTrainingId"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,48 +74,25 @@
         app:layout_constraintGuide_percent="0.9" />
 
     <TextView
-        android:id="@+id/textViewToday"
+        android:id="@+id/textViewNextTrainingId"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="@string/today"
+        android:text="@string/next_training"
         android:textAllCaps="true"
-        android:textSize="32sp"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline10" />
 
-    <TextView
-        android:id="@+id/textViewTrainingDescriptionId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/full_body"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewToday" />
-
-    <Button
-        android:id="@+id/buttonChangeTrainingId"
-        android:layout_width="51dp"
-        android:layout_height="34dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:backgroundTintMode="screen"
-        android:text="@string/change"
-        app:layout_constraintStart_toEndOf="@+id/textViewTrainingDescriptionId"
-        app:layout_constraintTop_toBottomOf="@+id/textViewToday" />
-
     <ListView
-        android:id="@+id/listViewTraining"
-        android:layout_width="327dp"
-        android:layout_height="184dp"
+        android:id="@+id/listViewTrainingDescriptionId"
+        android:layout_width="325dp"
+        android:layout_height="246dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:entries="@array/training_full_body"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTrainingDescriptionId" />
+        app:layout_constraintTop_toBottomOf="@+id/spinnerTrainingTypesId" />
 
     <Button
         android:id="@+id/buttonStartTrainingId"
@@ -127,7 +102,7 @@
         android:text="Start training"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listViewTraining" />
+        app:layout_constraintTop_toBottomOf="@+id/listViewTrainingDescriptionId" />
 
     <TextView
         android:id="@+id/textViewDoneTrainingsId"
@@ -135,22 +110,20 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Trainings done: "
+        android:text="@string/trainingsdone"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonStartTrainingId" />
 
-    <Button
-        android:id="@+id/buttonResetCountOfDoneTrainingsId"
-        android:layout_width="103dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/reset"
-        android:textSize="10sp"
+    <Spinner
+        android:id="@+id/spinnerTrainingTypesId"
+        android:layout_width="247dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:entries="@array/training_types"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewDoneTrainingsId" />
-
+        app:layout_constraintTop_toBottomOf="@+id/textViewNextTrainingId" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.fitnessbuddy.FirstLogin;
+package com.example.fitnessbuddy.firstlogin;
 
 import androidx.appcompat.app.AppCompatActivity;
 

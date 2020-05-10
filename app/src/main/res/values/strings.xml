@@ -27,7 +27,7 @@
     <string name="extra_active_desc">Intense exercise and active job</string>
     <string name="years">years</string>
     <string name="year">year</string>
-    <string name="today">Today</string>
+    <string name="next_training">Next training</string>
     <string name="meal">meal</string>
     <string name="training">training</string>
     <string name="full_body">Full body</string>
@@ -38,11 +38,54 @@
     <string name="lunch">lunch</string>
     <string name="breakfast">breakfast</string>
     <string name="dinner">dinner</string>
+    <string name="endTraining">End training</string>
+    <string name="trainingsdone">Trainings done:</string>
+    <string name="goal">Goal:</string>
+    <string name="proteins">Proteins:</string>
+    <string name="carbs">Carbs:</string>
+    <string name="fats">Fats:</string>
+    <string name="calories">Calories:</string>
+    <string name="settings">Settings</string>
     <string-array name="training_full_body">
         <item>1. back</item>
         <item>2. slack</item>
         <item>3. hack</item>
         <item>4. plak</item>
         <item>5. zak</item>
+        <item>6. subak</item>
     </string-array>
+    <string-array name="description_of_training">
+        <item>1. chest</item>
+        <item>2. chest</item>
+        <item>3. chest</item>
+        <item>4. chest</item>
+        <item>5. chest</item>
+        <item>6. chest</item>
+    </string-array>
+    <string-array name="legs_and_back">
+        <item>1. legs</item>
+        <item>2. legs</item>
+        <item>3. legs</item>
+        <item>4. legs</item>
+        <item>5. legs</item>
+        <item>6. legs</item>
+    </string-array>
+    <string-array name="shoulders_and_core">
+        <item>1. shoulders</item>
+        <item>2. shoulders</item>
+        <item>3. shoulders</item>
+        <item>4. shoulders</item>
+        <item>5. shoulders</item>
+        <item>6. shoulders</item>
+    </string-array>
+    <string-array name="training_types">
+        <item>Full body</item>
+        <item>Chest and arms</item>
+        <item>Legs and back</item>
+        <item>Shoulders and core</item>
+    </string-array>
+<string name="reset_counter">Reset counter of done trainings</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 </resources>

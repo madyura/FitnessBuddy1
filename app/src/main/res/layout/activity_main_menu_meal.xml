@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".MainMenuMeal">
 
+    <Button
+        android:id="@+id/settingsButtonId"
+        android:layout_width="44dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ic_settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textViewFitnessBuddyId"
         android:layout_width="wrap_content"
@@ -16,17 +26,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/menuButtonId"
-        android:layout_width="41dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="16dp"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/guideline10"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.47" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline10"
@@ -59,7 +58,6 @@
         android:textAllCaps="true"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
-        android:onClick="openMainMenuTraining"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/textViewButtonMealId"
@@ -78,7 +76,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
-        android:text="Goal:"
+        android:text="@string/goal"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline10" />
@@ -89,7 +87,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Proteins:"
+        android:text="@string/proteins"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewMealGoalId" />
@@ -100,7 +98,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Carbs:"
+        android:text="@string/carbs"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewMealProteinsId" />
@@ -111,7 +109,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Fat:"
+        android:text="@string/fats"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewMealCarbsId" />
@@ -121,9 +119,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="see menu"
-        android:onClick="openSelectTypeOfMeal"
         app:layout_constraintBottom_toTopOf="@+id/textViewButtonTrainingId"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMealFatId" />
+
+    <TextView
+        android:id="@+id/textViewMealCaloriesId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/calories"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewMealFatId" />
 

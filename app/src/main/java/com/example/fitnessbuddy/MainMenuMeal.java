@@ -10,7 +10,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
 public class MainMenuMeal extends AppCompatActivity {
 
     private TextView textViewButtonTraining;
@@ -69,15 +68,17 @@ public class MainMenuMeal extends AppCompatActivity {
         public void setPFC () {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         int calories = preferences.getInt("calories", 1);
-        int protein = (int) Math.round(calories*0.3/4);
-        int fat =  (int) Math.round((calories*0.3)/8);
-        int carb = (int) Math.round((calories*0.4)/4);
+        int protein = (int) Math.round(calories*0.35/4);
+        int fat =  (int) Math.round((calories*0.2)/8);
+        int carb = (int) Math.round((calories*0.45)/4);
         textViewMealProteins.setText(String.format("%s %s g", getString(R.string.proteins), protein));
         textViewMealCarbs.setText(String.format("%s %s g", getString(R.string.carbs), carb));
         textViewMealFat.setText(String.format("%s %s g", getString(R.string.fats), fat));
         textViewMealCalories.setText(String.format("%s %s", getString(R.string.calories), calories));
 
         }
+
+
 
 
 }

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <TextView
+        android:id="@+id/textViewFitnessBuddyId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <ScrollView
+        android:id="@+id/scrollViewMenuId"
+        android:layout_width="409dp"
+        android:layout_height="676dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline10">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutMenuId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewBreakfastId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/breakfast" />
+
+            <TextView
+                android:id="@+id/textViewBreakfastDescriptionId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/breakfast_description" />
+
+            <TextView
+                android:id="@+id/textViewFirstSnack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/first_snack" />
+
+            <TextView
+                android:id="@+id/textViewFirstSnackDescriptionId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dried_bread_with_ham_and_pickle" />
+
+            <TextView
+                android:id="@+id/textViewLunchId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lunch" />
+
+            <TextView
+                android:id="@+id/textViewLunchDescriptionId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lunch_meal_description" />
+
+            <TextView
+                android:id="@+id/textViewSecondSnackId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/second_snack" />
+
+            <TextView
+                android:id="@+id/textViewSecondSnackDescriptionId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/second_snack_description" />
+
+            <TextView
+                android:id="@+id/textViewDinnerId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dinner" />
+
+            <TextView
+                android:id="@+id/textViewDinnerDescriptionId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dinner_meal_description" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

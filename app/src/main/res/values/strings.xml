@@ -35,9 +35,9 @@
     <string name="chest">Chest and arms</string>
     <string name="change">Change</string>
     <string name="reset">reset</string>
-    <string name="lunch">lunch</string>
-    <string name="breakfast">breakfast</string>
-    <string name="dinner">dinner</string>
+    <string name="lunch">Lunch</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="dinner">Dinner</string>
     <string name="endTraining">End training</string>
     <string name="trainingsdone">Trainings done:</string>
     <string name="goal">Goal:</string>
@@ -89,4 +89,11 @@
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="splash_screen">Get pumped!</string>
+    <string name="first_snack">First snack</string>
+    <string name="dried_bread_with_ham_and_pickle">Dried rice bread with ham and pickle</string>
+    <string name="lunch_meal_description">Bulgur with chicken breast and salad</string>
+    <string name="dinner_meal_description">Rice with fish and salad</string>
+    <string name="second_snack">Second snack</string>
+    <string name="second_snack_description">Quark with apple</string>
+    <string name="breakfast_description">Oatmeal with milk, dried fruits and omlette</string>
 </resources>

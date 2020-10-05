@@ -9,7 +9,7 @@ import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
+
 public class MainMenuMeal extends AppCompatActivity {
 
     private TextView textViewButtonTraining;
@@ -20,6 +20,7 @@ public class MainMenuMeal extends AppCompatActivity {
     private TextView textViewMealFat;
     private TextView textViewMealCalories;
     private Button settingsButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,7 +52,7 @@ public class MainMenuMeal extends AppCompatActivity {
         buttonSeeMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent openSeeMenu = new Intent(getApplicationContext(), SelectTypeOfMeal.class);
+                Intent openSeeMenu = new Intent(getApplicationContext(), Menu.class);
                 startActivity(openSeeMenu);
             }
         });

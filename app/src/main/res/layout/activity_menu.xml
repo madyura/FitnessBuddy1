@@ -41,62 +41,62 @@
             <TextView
                 android:id="@+id/textViewBreakfastId"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="74dp"
                 android:text="@string/breakfast" />
 
             <TextView
                 android:id="@+id/textViewBreakfastDescriptionId"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="245dp"
                 android:text="@string/breakfast_description" />
 
             <TextView
-                android:id="@+id/textViewFirstSnack"
+                android:id="@+id/textViewFirstSnackId"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="225dp"
                 android:text="@string/first_snack" />
 
             <TextView
                 android:id="@+id/textViewFirstSnackDescriptionId"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/dried_bread_with_ham_and_pickle" />
+                android:layout_height="76dp"
+                android:text="@string/first_snack_description" />
 
             <TextView
                 android:id="@+id/textViewLunchId"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="113dp"
                 android:text="@string/lunch" />
 
             <TextView
                 android:id="@+id/textViewLunchDescriptionId"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/lunch_meal_description" />
+                android:layout_height="179dp"
+                android:text="@string/lunch_description" />
 
             <TextView
                 android:id="@+id/textViewSecondSnackId"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="103dp"
                 android:text="@string/second_snack" />
 
             <TextView
                 android:id="@+id/textViewSecondSnackDescriptionId"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="117dp"
                 android:text="@string/second_snack_description" />
 
             <TextView
                 android:id="@+id/textViewDinnerId"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="109dp"
                 android:text="@string/dinner" />
 
             <TextView
                 android:id="@+id/textViewDinnerDescriptionId"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/dinner_meal_description" />
+                android:layout_height="130dp"
+                android:text="@string/dinner_description" />
         </LinearLayout>
     </ScrollView>
 

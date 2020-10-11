@@ -90,9 +90,9 @@
     <string name="no">No</string>
     <string name="splash_screen">Get pumped!</string>
     <string name="first_snack">First snack</string>
-    <string name="dried_bread_with_ham_and_pickle">Dried rice bread with ham and pickle</string>
-    <string name="lunch_meal_description">Bulgur with chicken breast and salad</string>
-    <string name="dinner_meal_description">Rice with fish and salad</string>
+    <string name="first_snack_description">Dried rice bread with ham and pickle</string>
+    <string name="lunch_description">Bulgur with chicken breast and salad</string>
+    <string name="dinner_description">Rice with fish and salad</string>
     <string name="second_snack">Second snack</string>
     <string name="second_snack_description">Quark with apple</string>
     <string name="breakfast_description">Oatmeal with milk, dried fruits and omlette</string>

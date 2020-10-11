@@ -38,7 +38,7 @@ public class MainMenuMeal extends AppCompatActivity {
         setPFC();
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         String goal = String.format("%s %s", getString(R.string.goal), preferences.getString("goalCoeficient", "error"));
-        preferences.getInt("calories", 9999);
+        preferences.getInt("calories", 1);
         textViewMealGoal.setText(goal);
 
         textViewButtonTraining.setOnClickListener(new View.OnClickListener() {

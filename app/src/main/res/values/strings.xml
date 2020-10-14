@@ -1,4 +1,5 @@
 <resources>
+    <string name="semicolon_with_space">: </string>
     <string name="app_name">Fitness Buddy</string>
     <string name="welcome">Welcome</string>
     <string name="welcome_info">This app should help you to train and keep your diet under control</string>
@@ -95,5 +96,24 @@
     <string name="dinner_description">Rice with fish and salad</string>
     <string name="second_snack">Second snack</string>
     <string name="second_snack_description">Quark with apple</string>
-    <string name="breakfast_description">Oatmeal with milk, dried fruits and omlette</string>
+    <string name="breakfast_description">Oatmeal with milk, dried fruits and omelette</string>
+    <string name="oatmeal">oatmeal</string>
+    <string name="milk">milk</string>
+    <string name="dried_fruits">dried fruits</string>
+    <string name="eggs">eggs</string>
+    <string name="dried_rice">dried rice bread</string>
+    <string name="ham">low fat ham</string>
+    <string name="pickle">fresh pickle</string>
+    <string name="bulgur">bulgur</string>
+    <string name="chicken_breast">chicken breast</string>
+    <string name="salad">salad</string>
+    <string name="rice">rice</string>
+    <string name="fish">low fat fish</string>
+    <string name="quark">quark</string>
+    <string name="apple">apple</string>
+    <string name="grams">gr</string>
+    <string name="milliliters">ml</string>
+    <string name="unlimited">unlimited</string>
+
+
 </resources>

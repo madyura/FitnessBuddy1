@@ -11,6 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".test_activity"></activity>
+        <activity android:name=".trainingsVeiws.ChestAndShoulders_Training" />
+        <activity android:name=".trainingsVeiws.LegsAndTriceps_Training" />
+        <activity android:name=".trainingsVeiws.BackAndBiceps_Training" />
+        <activity android:name=".trainingsVeiws.FullBody_Training" />
+        <activity android:name=".Trainings.Training_ChestAndArms" />
         <activity android:name=".Settings" />
         <activity android:name=".GeneratedTraining" />
         <activity android:name=".firstlogin.MainActivity" />

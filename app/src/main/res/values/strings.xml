@@ -28,7 +28,7 @@
     <string name="extra_active_desc">Intense exercise and active job</string>
     <string name="years">years</string>
     <string name="year">year</string>
-    <string name="next_training">Next training</string>
+    <string name="choose_training_type">Choose your training</string>
     <string name="meal">meal</string>
     <string name="training">training</string>
     <string name="full_body">Full body</string>
@@ -47,15 +47,25 @@
     <string name="fats">Fats:</string>
     <string name="calories">Calories:</string>
     <string name="settings">Settings</string>
-    <string-array name="training_full_body">
-        <item>1. back</item>
-        <item>2. slack</item>
-        <item>3. hack</item>
-        <item>4. plak</item>
-        <item>5. zak</item>
-        <item>6. subak</item>
+
+    <string-array name="trainings_list">
+        <item>Full body</item>
+        <item>Chest and arms</item>
+        <item>Legs and back</item>
+        <item>Shoulders and core</item>
     </string-array>
-    <string-array name="description_of_training">
+
+    <string-array name="full_body">
+        <item>1. Bench Press</item>
+        <item>2. Leg Press</item>
+        <item>3. Leg Curl</item>
+        <item>4. Lateral Raise</item>
+        <item>5. Cable Row</item>
+        <item>6. EZ Bar Curl</item>
+        <item>7. Tricep Dips</item>
+        <item>8. Crunches </item>
+    </string-array>
+    <string-array name="chest_and_arms">
         <item>1. chest</item>
         <item>2. chest</item>
         <item>3. chest</item>
@@ -79,13 +89,7 @@
         <item>5. shoulders</item>
         <item>6. shoulders</item>
     </string-array>
-    <string-array name="training_types">
-        <item>Full body</item>
-        <item>Chest and arms</item>
-        <item>Legs and back</item>
-        <item>Shoulders and core</item>
-    </string-array>
-<string name="reset_counter">Reset counter of done trainings</string>
+    <string name="reset_counter">Reset counter of done trainings</string>
     <string name="are_you_sure">Are you sure?</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
@@ -114,6 +118,16 @@
     <string name="grams">gr</string>
     <string name="milliliters">ml</string>
     <string name="unlimited">unlimited</string>
+    <string name="leg_press">1. Leg press</string>
+    <string name="lat_pulldown">2. Lat pulldown</string>
+    <string name="bench_press">3. Bench press</string>
+    <string name="dumbbell_shoulder_press">4. Dumbbell shoulder press</string>
+    <string name="dumbbell_bicep_curl">5. Dumbbell Bicep cur</string>
+    <string name="triceps_pushdown">6. Triceps pushdown</string>
+    <string name="deadlift">1. Deadlift</string>
+    <string name="barbell_row">3. Barbell row</string>
+    <string name="bicep_curl">4. Bicep curl</string>
+    <string name="crunches">5. Crunches</string>
 
 
 </resources>

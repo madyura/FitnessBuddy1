@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".trainingsVeiws.FullBody_Training">
+
+    <TextView
+        android:id="@+id/textViewFitnessBuddyId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="676dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline10">
+
+        <TextView
+            android:id="@+id/textViewLegPressId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/leg_press"
+            android:onClick="openLegPress"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewLatPulldownId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openLatPulldown"
+            android:text="@string/lat_pulldown"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewBenchPressId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openBenchPress"
+            android:text="@string/bench_press"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewDumbbellShoulderPressId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openDumbbellShoulderPress"
+            android:text="@string/dumbbell_shoulder_press"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewDumbbellBicepCurlId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openDumbbellBicepCurl"
+            android:text="@string/dumbbell_bicep_curl"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewTricepsPushdownId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openTricepsPushdownId"
+            android:text="@string/triceps_pushdown"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

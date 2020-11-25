@@ -41,62 +41,157 @@
             <TextView
                 android:id="@+id/textViewBreakfastId"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="30dp"
                 android:text="@string/breakfast" />
 
-            <TextView
-                android:id="@+id/textViewBreakfastDescriptionId"
+            <LinearLayout
+                android:id="@+id/linearLayoutBreakfastDescriptionId"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/breakfast_description" />
+                android:layout_height="80dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewOatmealId"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="@string/oatmeal" />
+
+                <TextView
+                    android:id="@+id/textViewMilkId"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="@string/milk" />
+
+                <TextView
+                    android:id="@+id/textViewDriedFruitsId"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="@string/dried_fruits" />
+
+                <TextView
+                    android:id="@+id/textViewEggsId"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="@string/eggs" />
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/textViewFirstSnack"
+                android:id="@+id/textViewFirstSnackId"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="30dp"
                 android:text="@string/first_snack" />
 
-            <TextView
-                android:id="@+id/textViewFirstSnackDescriptionId"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/dried_bread_with_ham_and_pickle" />
+                android:layout_height="60dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewDriedRiceBreadId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dried_rice" />
+
+                <TextView
+                    android:id="@+id/textViewHamId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ham" />
+
+                <TextView
+                    android:id="@+id/textViewPickleId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pickle" />
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/textViewLunchId"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="30dp"
                 android:text="@string/lunch" />
 
-            <TextView
-                android:id="@+id/textViewLunchDescriptionId"
+            <LinearLayout
+                android:id="@+id/LinearLayoutLunchId"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/lunch_meal_description" />
+                android:layout_height="60dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewBulgurId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bulgur" />
+
+                <TextView
+                    android:id="@+id/textViewChickenBreastId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chicken_breast" />
+
+                <TextView
+                    android:id="@+id/textViewSaladId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/salad" />
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/textViewSecondSnackId"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="30dp"
                 android:text="@string/second_snack" />
 
-            <TextView
-                android:id="@+id/textViewSecondSnackDescriptionId"
+            <LinearLayout
+                android:id="@+id/LinearLayoutSecondSnackId"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/second_snack_description" />
+                android:layout_height="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewQuarkId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quark" />
+
+                <TextView
+                    android:id="@+id/textViewAppleId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/apple" />
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/textViewDinnerId"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="30dp"
                 android:text="@string/dinner" />
 
-            <TextView
-                android:id="@+id/textViewDinnerDescriptionId"
+            <LinearLayout
+                android:id="@+id/LinearLayoutDinnerId"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/dinner_meal_description" />
+                android:layout_height="60dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewFishId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fish" />
+
+                <TextView
+                    android:id="@+id/textViewRiceId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rice" />
+
+                <TextView
+                    android:id="@+id/textViewSalad2Id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/salad" />
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 

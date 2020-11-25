@@ -75,53 +75,39 @@
 
     <TextView
         android:id="@+id/textViewNextTrainingId"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="@string/next_training"
+        android:text="@string/choose_training_type"
         android:textAllCaps="true"
         android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline10" />
 
-    <ListView
-        android:id="@+id/listViewTrainingDescriptionId"
-        android:layout_width="325dp"
-        android:layout_height="246dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerTrainingTypesId" />
-
-    <Button
-        android:id="@+id/buttonStartTrainingId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Start training"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listViewTrainingDescriptionId" />
-
     <TextView
         android:id="@+id/textViewDoneTrainingsId"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginBottom="128dp"
         android:text="@string/trainingsdone"
         android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonStartTrainingId" />
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <Spinner
-        android:id="@+id/spinnerTrainingTypesId"
-        android:layout_width="247dp"
-        android:layout_height="36dp"
+    <ListView
+        android:id="@+id/listViewListOfTrainings"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:entries="@array/training_types"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="16dp"
+        android:entries="@array/trainings_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewNextTrainingId" />
 

@@ -128,6 +128,9 @@
     <string name="barbell_row">3. Barbell row</string>
     <string name="bicep_curl">4. Bicep curl</string>
     <string name="crunches">5. Crunches</string>
+    <string name="bench_dips">Bench dips</string>
+    <string name="overhead_press">Overhead Press</string>
+    <string name="Dumbbell_fly">Dumbbell fly</string>
 
 
 </resources>

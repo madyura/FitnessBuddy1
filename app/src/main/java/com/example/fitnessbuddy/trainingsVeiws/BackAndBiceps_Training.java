@@ -15,6 +15,6 @@ public class BackAndBiceps_Training extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_BackAndBiceps__training);
+        setContentView(R.layout.activity_back_and_biceps__training);
     }
 }

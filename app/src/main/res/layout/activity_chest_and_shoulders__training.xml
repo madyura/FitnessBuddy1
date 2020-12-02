@@ -24,4 +24,49 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.1" />
 
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="676dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline10">
+
+        <TextView
+            android:id="@+id/textViewBenchPressId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bench_press"
+            android:onClick="openBenchPress"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewBenchDipsId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openBenchDips"
+            android:text="@string/bench_dips"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewOverheadPressId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openOverheadPress"
+            android:text="@string/overhead_press"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewDumbbellFlyId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openDumbbellFly"
+            android:text="@string/Dumbbell_fly"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

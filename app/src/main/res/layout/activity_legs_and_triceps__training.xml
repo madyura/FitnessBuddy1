@@ -35,6 +35,14 @@
         app:layout_constraintTop_toTopOf="@+id/guideline10">
 
         <TextView
+            android:id="@+id/textWarmUpId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/warm_up"
+            android:onClick="openWarmUp"
+            android:textSize="18sp" />
+
+        <TextView
             android:id="@+id/textViewSquatsId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -43,30 +51,40 @@
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/textViewBenchDipsId"
+            android:id="@+id/textViewSeatedCalfRaiseId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="openBenchDips"
-            android:text="@string/bench_dips"
+            android:onClick="openSeatedCalfRaise"
+            android:text="@string/seated_calf_raise"
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/textViewOverheadPressId"
+            android:id="@+id/textViewCloseGripBenchPressId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="openOverheadPress"
-            android:text="@string/overhead_press"
+            android:onClick="openCloseGripBenchPress"
+            android:text="@string/close_grip_bench_press"
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/textViewDumbbellFlyId"
+            android:id="@+id/textViewFrenchBenchPressId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="openDumbbellFly"
-            android:text="@string/Dumbbell_fly"
+            android:onClick="openFrenchBenchPress"
+            android:text="@string/french_bench_press"
             android:textSize="18sp" />
 
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonEndTrainingId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/endTraining"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

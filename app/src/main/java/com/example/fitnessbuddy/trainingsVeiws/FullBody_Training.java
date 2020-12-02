@@ -67,4 +67,7 @@ public class FullBody_Training extends AppCompatActivity {
         intent.setPackage("com.google.android.youtube");
         startActivity(intent);
     }
+
+    public void openDeadlift(View view) {
+    }
 }

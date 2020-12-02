@@ -131,6 +131,11 @@
     <string name="bench_dips">Bench dips</string>
     <string name="overhead_press">Overhead Press</string>
     <string name="Dumbbell_fly">Dumbbell fly</string>
+    <string name="squats">Squats</string>
+    <string name="warm_up">1. Warm up</string>
+    <string name="seated_calf_raise">Seated calf raise</string>
+    <string name="close_grip_bench_press">Close-grip bench press</string>
+    <string name="french_bench_press">French bench press</string>
 
 
 </resources>

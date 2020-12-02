@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".trainingsVeiws.FullBody_Training">
+    tools:context=".trainingsVeiws.BackAndBiceps_Training">
 
     <TextView
         android:id="@+id/textViewFitnessBuddyId"
@@ -33,6 +33,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline10">
+
+        <TextView
+            android:id="@+id/textWarmUpId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/warm_up"
+            android:onClick="openWarmUp"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/textViewDeafliftId"
@@ -76,5 +84,15 @@
 
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonEndTrainingId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/endTraining"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

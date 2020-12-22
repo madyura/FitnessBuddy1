@@ -82,7 +82,7 @@ public class Menu extends AppCompatActivity {
         int resultQuark = (int) ((0.07 * calories) / 0.7);
         int resultApple = (int) ((0.03 * calories) / 0.53);
         int resultFish = (int) ((0.1 * calories) / 1.3);
-        int resultRice = (int) ((0.7 * calories) / 3.6);
+        int resultRice = (int) ((0.07 * calories) / 3.6);
 
         textViewBreakfast.setText(getString(R.string.breakfast) + ": " + getString(R.string.breakfast_description));
         textViewOatmeal.setText(getString(R.string.oatmeal) + ": " + resultOat + getString(R.string.grams));

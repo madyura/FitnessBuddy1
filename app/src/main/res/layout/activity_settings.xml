@@ -7,17 +7,19 @@
     tools:context=".Settings">
 
     <TextView
-        android:id="@+id/textViewResetCounterId"
+        android:id="@+id/textViewEditDatasId"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center_vertical"
         android:paddingStart="16sp"
-        android:text="@string/reset_counter"
+        android:text="Edit your datas"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewResetCounterId" />
+        app:layout_constraintTop_toBottomOf="@+id/guideline1"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textViewResetCounterId"
@@ -25,12 +27,12 @@
         android:layout_height="0dp"
         android:gravity="center_vertical"
         android:paddingStart="16sp"
-        android:text="Edit your datas"
+        android:text="@string/reset_counter"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+        app:layout_constraintTop_toBottomOf="@+id/guideline2" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline1"
@@ -78,17 +80,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textViewEditDatasId"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:gravity="center_vertical"
-        android:paddingStart="16sp"
-        android:text="Edit your datas"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -40,7 +40,9 @@
             android:layout_height="wrap_content"
             android:text="@string/warm_up"
             android:onClick="openWarmUp"
-            android:textSize="18sp" />
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textViewDeafliftId"
@@ -48,7 +50,9 @@
             android:layout_height="wrap_content"
             android:text="@string/deadlift"
             android:onClick="openDeadlift"
-            android:textSize="18sp" />
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textViewLatPulldownIdId"
@@ -56,7 +60,9 @@
             android:layout_height="wrap_content"
             android:onClick="openLatPulldown"
             android:text="@string/lat_pulldown"
-            android:textSize="18sp" />
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textViewBarbellRowId"
@@ -64,7 +70,9 @@
             android:layout_height="wrap_content"
             android:onClick="openBarbellRow"
             android:text="@string/barbell_row"
-            android:textSize="18sp" />
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textViewBicepCurlId"
@@ -72,7 +80,9 @@
             android:layout_height="wrap_content"
             android:onClick="openBicepCurl"
             android:text="@string/bicep_curl"
-            android:textSize="18sp" />
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textViewCrunchesId"
@@ -80,7 +90,9 @@
             android:layout_height="wrap_content"
             android:onClick="openCrunches"
             android:text="@string/crunches"
-            android:textSize="18sp" />
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="24sp" />
 
 
     </LinearLayout>

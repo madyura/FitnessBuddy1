@@ -40,7 +40,9 @@
             android:layout_height="wrap_content"
             android:text="@string/leg_press"
             android:onClick="openLegPress"
-            android:textSize="18sp" />
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textViewLatPulldownId"
@@ -48,7 +50,9 @@
             android:layout_height="wrap_content"
             android:onClick="openLatPulldown"
             android:text="@string/lat_pulldown"
-            android:textSize="18sp" />
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textViewBenchPressId"
@@ -56,7 +60,9 @@
             android:layout_height="wrap_content"
             android:onClick="openBenchPress"
             android:text="@string/bench_press"
-            android:textSize="18sp" />
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textViewDumbbellShoulderPressId"
@@ -64,7 +70,9 @@
             android:layout_height="wrap_content"
             android:onClick="openDumbbellShoulderPress"
             android:text="@string/dumbbell_shoulder_press"
-            android:textSize="18sp" />
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textViewDumbbellBicepCurlId"
@@ -72,7 +80,9 @@
             android:layout_height="wrap_content"
             android:onClick="openDumbbellBicepCurl"
             android:text="@string/dumbbell_bicep_curl"
-            android:textSize="18sp" />
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textViewTricepsPushdownId"
@@ -80,7 +90,9 @@
             android:layout_height="wrap_content"
             android:onClick="openTricepsPushdownId"
             android:text="@string/triceps_pushdown"
-            android:textSize="18sp" />
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="24sp" />
 
 
     </LinearLayout>

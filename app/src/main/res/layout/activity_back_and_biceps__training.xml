@@ -28,70 +28,121 @@
         android:layout_width="409dp"
         android:layout_height="676dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline10">
 
         <TextView
             android:id="@+id/textWarmUpId"
-            android:layout_width="match_parent"
+            android:layout_width="370dp"
             android:layout_height="wrap_content"
-            android:text="@string/warm_up"
-            android:onClick="openWarmUp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:background="#D7D8D8"
+            android:onClick="openWarmUp"
+            android:text="@string/warm_up"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textViewDeafliftId"
-            android:layout_width="match_parent"
+            android:layout_width="370dp"
             android:layout_height="wrap_content"
-            android:text="@string/deadlift"
-            android:onClick="openDeadlift"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:background="#D7D8D8"
+            android:onClick="openDeadlift"
+            android:text="@string/deadlift"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewDeafliftRepsId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/four_sets"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textViewLatPulldownIdId"
-            android:layout_width="match_parent"
+            android:layout_width="370dp"
             android:layout_height="wrap_content"
-            android:onClick="openLatPulldown"
-            android:text="@string/lat_pulldown"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:background="#D7D8D8"
+            android:onClick="openLatPulldown"
+            android:text="@string/lat_pulldown"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewLatPulldownRepsId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/four_sets"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textViewBarbellRowId"
-            android:layout_width="match_parent"
+            android:layout_width="370dp"
             android:layout_height="wrap_content"
-            android:onClick="openBarbellRow"
-            android:text="@string/barbell_row"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:background="#D7D8D8"
+            android:text="@string/barbell_row"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewBarbellRowRepsId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/four_sets"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textViewBicepCurlId"
-            android:layout_width="match_parent"
+            android:layout_width="370dp"
             android:layout_height="wrap_content"
-            android:onClick="openBicepCurl"
-            android:text="@string/bicep_curl"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:background="#D7D8D8"
+            android:onClick="openBicepCurl"
+            android:text="@string/bicep_curl"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewBicepCurlRepsId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/four_sets"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textViewCrunchesId"
-            android:layout_width="match_parent"
+            android:layout_width="370dp"
             android:layout_height="wrap_content"
-            android:onClick="openCrunches"
-            android:text="@string/crunches"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:background="#D7D8D8"
+            android:onClick="openCrunches"
+            android:text="@string/crunches"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewCrunchesRepsId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/three_sets_max_reps"
             android:textSize="24sp" />
 
 

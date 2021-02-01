@@ -28,60 +28,105 @@
         android:layout_width="409dp"
         android:layout_height="676dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline10">
 
         <TextView
             android:id="@+id/textWarmUpId"
-            android:layout_width="match_parent"
+            android:layout_width="370dp"
             android:layout_height="wrap_content"
-            android:text="@string/warm_up"
-            android:onClick="openWarmUp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:background="#D7D8D8"
+            android:onClick="openWarmUp"
+            android:text="@string/warm_up"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textViewBenchPressId"
-            android:layout_width="match_parent"
+            android:layout_width="370dp"
             android:layout_height="wrap_content"
-            android:text="@string/bench_press"
-            android:onClick="openBenchPress"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:background="#D7D8D8"
+            android:onClick="openBenchPress"
+            android:text="@string/bench_press"
             android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewBenchPressRepsId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/four_sets"
+            android:textSize="24sp" />
+
 
         <TextView
             android:id="@+id/textViewBenchDipsId"
-            android:layout_width="match_parent"
+            android:layout_width="370dp"
             android:layout_height="wrap_content"
-            android:onClick="openBenchDips"
-            android:text="@string/bench_dips"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:background="#D7D8D8"
+            android:onClick="openBenchDips"
+            android:text="@string/bench_dips"
             android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewBenchDipsRepsId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/four_sets"
+            android:textSize="24sp" />
+
 
         <TextView
             android:id="@+id/textViewOverheadPressId"
-            android:layout_width="match_parent"
+            android:layout_width="370dp"
             android:layout_height="wrap_content"
-            android:onClick="openOverheadPress"
-            android:text="@string/overhead_press"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:background="#D7D8D8"
+            android:onClick="openOverheadPress"
+            android:text="@string/overhead_press"
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/textViewDumbbellFlyId"
+            android:id="@+id/textViewOverheadPressRepsId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="openDumbbellFly"
-            android:text="@string/Dumbbell_fly"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:text="@string/four_sets"
+            android:textSize="24sp" />
+
+
+        <TextView
+            android:id="@+id/textViewDumbbellFlyId"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="#D7D8D8"
+            android:onClick="openDumbbellFly"
+            android:text="@string/Dumbbell_fly"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewDumbbellFlyRepsId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/four_sets"
             android:textSize="24sp" />
 
 

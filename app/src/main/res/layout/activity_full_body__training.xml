@@ -28,70 +28,131 @@
         android:layout_width="409dp"
         android:layout_height="676dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline10">
 
         <TextView
             android:id="@+id/textViewLegPressId"
-            android:layout_width="match_parent"
+            android:layout_width="370dp"
             android:layout_height="wrap_content"
-            android:text="@string/leg_press"
-            android:onClick="openLegPress"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:background="#D7D8D8"
+            android:onClick="openLegPress"
+            android:text="@string/leg_press"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewLegPressRepsId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/four_sets"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textViewLatPulldownId"
-            android:layout_width="match_parent"
+            android:layout_width="370dp"
             android:layout_height="wrap_content"
-            android:onClick="openLatPulldown"
-            android:text="@string/lat_pulldown"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:background="#D7D8D8"
+            android:onClick="openLatPulldown"
+            android:text="@string/lat_pulldown"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewLatPulldownRepsId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/four_sets"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textViewBenchPressId"
-            android:layout_width="match_parent"
+            android:layout_width="370dp"
             android:layout_height="wrap_content"
-            android:onClick="openBenchPress"
-            android:text="@string/bench_press"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:background="#D7D8D8"
+            android:onClick="openBenchPress"
+            android:text="@string/bench_press"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewBenchPressRepsId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/four_sets"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textViewDumbbellShoulderPressId"
-            android:layout_width="match_parent"
+            android:layout_width="370dp"
             android:layout_height="wrap_content"
-            android:onClick="openDumbbellShoulderPress"
-            android:text="@string/dumbbell_shoulder_press"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:background="#D7D8D8"
+            android:onClick="openDumbbellShoulderPress"
+            android:text="@string/dumbbell_shoulder_press"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewDumbbellShoulderPressRepsId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/four_sets"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textViewDumbbellBicepCurlId"
-            android:layout_width="match_parent"
+            android:layout_width="370dp"
             android:layout_height="wrap_content"
-            android:onClick="openDumbbellBicepCurl"
-            android:text="@string/dumbbell_bicep_curl"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:background="#D7D8D8"
+            android:onClick="openDumbbellBicepCurl"
+            android:text="@string/dumbbell_bicep_curl"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewDumbbellBicepCurlRepsId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/four_sets"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textViewTricepsPushdownId"
-            android:layout_width="match_parent"
+            android:layout_width="370dp"
             android:layout_height="wrap_content"
-            android:onClick="openTricepsPushdownId"
-            android:text="@string/triceps_pushdown"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:background="#D7D8D8"
+            android:onClick="openTricepsPushdownId"
+            android:text="@string/triceps_pushdown"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewTricepsPushdownRepsId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/four_sets"
             android:textSize="24sp" />
 
 

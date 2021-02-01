@@ -28,60 +28,102 @@
         android:layout_width="409dp"
         android:layout_height="676dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline10">
 
         <TextView
             android:id="@+id/textWarmUpId"
-            android:layout_width="match_parent"
+            android:layout_width="370dp"
             android:layout_height="wrap_content"
-            android:text="@string/warm_up"
-            android:onClick="openWarmUp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:background="#D7D8D8"
+            android:onClick="openWarmUp"
+            android:text="@string/warm_up"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textViewSquatsId"
-            android:layout_width="match_parent"
+            android:layout_width="370dp"
             android:layout_height="wrap_content"
-            android:text="@string/squats"
-            android:onClick="openBenchPress"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:background="#D7D8D8"
+            android:onClick="openBenchPress"
+            android:text="@string/squats"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewSquatsRepsId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/four_sets"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textViewSeatedCalfRaiseId"
-            android:layout_width="match_parent"
+            android:layout_width="370dp"
             android:layout_height="wrap_content"
-            android:onClick="openSeatedCalfRaise"
-            android:text="@string/seated_calf_raise"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:background="#D7D8D8"
+            android:onClick="openSeatedCalfRaise"
+            android:text="@string/seated_calf_raise"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewSeatedCalfRaiseRepsId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/four_sets"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textViewCloseGripBenchPressId"
-            android:layout_width="match_parent"
+            android:layout_width="370dp"
             android:layout_height="wrap_content"
-            android:onClick="openCloseGripBenchPress"
-            android:text="@string/close_grip_bench_press"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:background="#D7D8D8"
+            android:onClick="openCloseGripBenchPress"
+            android:text="@string/close_grip_bench_press"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewCloseGripBenchePressRepsId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/four_sets"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textViewFrenchBenchPressId"
-            android:layout_width="match_parent"
+            android:layout_width="370dp"
             android:layout_height="wrap_content"
-            android:onClick="openFrenchBenchPress"
-            android:text="@string/french_bench_press"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:background="#D7D8D8"
+            android:onClick="openFrenchBenchPress"
+            android:text="@string/french_bench_press"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewFrenchBenchPressRepsId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/four_sets"
             android:textSize="24sp" />
 
 

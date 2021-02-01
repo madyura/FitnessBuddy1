@@ -120,7 +120,7 @@
         android:layout_height="0dp"
         android:gravity="center"
         android:onClick="finishProfileDetailsButton"
-        android:text="Button"
+        android:text="Next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

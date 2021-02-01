@@ -26,178 +26,182 @@
 
     <ScrollView
         android:id="@+id/scrollViewMenuId"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline10">
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFitnessBuddyId">
 
         <LinearLayout
             android:id="@+id/linearLayoutMenuId"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textViewBreakfastId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAllCaps="true"
-                android:textSize="22sp"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="15dp"
+                android:text="@string/breakfast"
+                android:textAlignment="center"
 
-                android:text="@string/breakfast" />
+                android:textAllCaps="true"
+                android:textSize="22sp" />
 
             <LinearLayout
                 android:id="@+id/linearLayoutBreakfastDescriptionId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginBottom="15dp">
+                android:layout_marginBottom="25dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textViewOatmealId"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:text="@string/oatmeal" />
+                    android:text="@string/oatmeal"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/textViewMilkId"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:text="@string/milk" />
+                    android:text="@string/milk"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/textViewDriedFruitsId"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:text="@string/dried_fruits" />
+                    android:text="@string/dried_fruits"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/textViewEggsId"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:text="@string/eggs" />
+                    android:text="@string/eggs"
+                    android:textSize="20sp" />
             </LinearLayout>
 
             <TextView
                 android:id="@+id/textViewFirstSnackId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:textAllCaps="true"
+                android:layout_marginBottom="15dp"
                 android:text="@string/first_snack"
-                android:layout_marginBottom="5dp"/>
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="20dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginBottom="15dp">
+                android:layout_marginBottom="25dp"
+                android:orientation="vertical">
+
                 <TextView
                     android:id="@+id/textViewDriedRiceBreadId"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:text="@string/dried_rice" />
+                    android:text="@string/dried_rice"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/textViewHamId"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:text="@string/ham" />
+                    android:text="@string/ham"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/textViewPickleId"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:text="@string/pickle" />
+                    android:text="@string/pickle"
+                    android:textSize="20sp" />
             </LinearLayout>
 
             <TextView
                 android:id="@+id/textViewLunchId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:textAllCaps="true"
+                android:layout_marginBottom="15dp"
                 android:text="@string/lunch"
-                android:layout_marginBottom="5dp"/>
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="20dp" />
 
             <LinearLayout
                 android:id="@+id/LinearLayoutLunchId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginBottom="15dp">
+                android:layout_marginBottom="25dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textViewBulgurId"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:text="@string/bulgur" />
+                    android:text="@string/bulgur"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/textViewChickenBreastId"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:text="@string/chicken_breast" />
+                    android:text="@string/chicken_breast"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/textViewSaladId"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:text="@string/salad" />
+                    android:text="@string/salad"
+                    android:textSize="20sp" />
             </LinearLayout>
 
             <TextView
                 android:id="@+id/textViewSecondSnackId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:textAllCaps="true"
+                android:layout_marginBottom="15dp"
                 android:text="@string/second_snack"
-                android:layout_marginBottom="5dp"/>
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="20dp" />
 
             <LinearLayout
                 android:id="@+id/LinearLayoutSecondSnackId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginBottom="15dp">
+                android:layout_marginBottom="25dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textViewQuarkId"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:text="@string/quark" />
+                    android:text="@string/quark"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/textViewAppleId"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:text="@string/apple" />
+                    android:text="@string/apple"
+                    android:textSize="20sp" />
             </LinearLayout>
 
             <TextView
                 android:id="@+id/textViewDinnerId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:textAllCaps="true"
+                android:layout_marginBottom="15dp"
                 android:text="@string/dinner"
-                android:layout_marginBottom="5dp"/>
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="20dp" />
 
             <LinearLayout
                 android:id="@+id/LinearLayoutDinnerId"
@@ -209,23 +213,23 @@
                     android:id="@+id/textViewFishId"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:text="@string/fish" />
+                    android:text="@string/fish"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/textViewRiceId"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:text="@string/rice" />
+                    android:text="@string/rice"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/textViewSalad2Id"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="20sp"
+                    android:layout_marginBottom="15dp"
                     android:text="@string/salad"
-                    android:layout_marginBottom="15dp"/>
+                    android:textSize="20sp" />
             </LinearLayout>
 
         </LinearLayout>

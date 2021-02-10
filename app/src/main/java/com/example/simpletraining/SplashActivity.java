@@ -1,4 +1,4 @@
-package com.example.fitnessbuddy;
+package com.example.simpletraining;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.preference.PreferenceManager;
 
-import com.example.fitnessbuddy.firstlogin.MainActivity;
+import com.example.simpletraining.firstlogin.MainActivity;
 
 public class SplashActivity extends AppCompatActivity {
 

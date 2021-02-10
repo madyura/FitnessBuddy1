@@ -1,4 +1,4 @@
-package com.example.fitnessbuddy.firstlogin;
+package com.example.simpletraining.firstlogin;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,7 +11,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.fitnessbuddy.R;
+import com.example.simpletraining.R;
 
 public class ProfileDetails1 extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.example.fitnessbuddy;
+package com.example.simpletraining;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,10 +12,10 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.example.fitnessbuddy.trainingsVeiws.BackAndBiceps_Training;
-import com.example.fitnessbuddy.trainingsVeiws.FullBody_Training;
-import com.example.fitnessbuddy.trainingsVeiws.LegsAndTriceps_Training;
-import com.example.fitnessbuddy.trainingsVeiws.ChestAndShoulders_Training;
+import com.example.simpletraining.trainingsVeiws.BackAndBiceps_Training;
+import com.example.simpletraining.trainingsVeiws.FullBody_Training;
+import com.example.simpletraining.trainingsVeiws.LegsAndTriceps_Training;
+import com.example.simpletraining.trainingsVeiws.ChestAndShoulders_Training;
 
 public class MainMenuTraining extends AppCompatActivity {
 
@@ -61,16 +61,6 @@ public class MainMenuTraining extends AppCompatActivity {
             }
         });
 
-
-
-
-//        buttonStartTraining.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent goToGeneratedTraining = new Intent(getApplicationContext(), GeneratedTraining.class);
-//                startActivity(goToGeneratedTraining);
-//            }
-//        });
 
         textViewButtonMeal.setOnClickListener(new View.OnClickListener() {
             @Override

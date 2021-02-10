@@ -1,4 +1,4 @@
-package com.example.fitnessbuddy.firstlogin;
+package com.example.simpletraining.firstlogin;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.fitnessbuddy.R;
+import com.example.simpletraining.R;
 
 public class MainActivity extends AppCompatActivity {
 

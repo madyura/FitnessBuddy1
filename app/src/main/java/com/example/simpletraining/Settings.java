@@ -1,4 +1,4 @@
-package com.example.fitnessbuddy;
+package com.example.simpletraining;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,7 +12,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.fitnessbuddy.firstlogin.ProfileDetails1;
+import com.example.simpletraining.firstlogin.ProfileDetails1;
 
 public class Settings extends AppCompatActivity {
 

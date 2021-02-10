@@ -1,4 +1,4 @@
-package com.example.fitnessbuddy.trainingsVeiws;
+package com.example.simpletraining.trainingsVeiws;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,18 +10,22 @@ import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.fitnessbuddy.MainMenuTraining;
-import com.example.fitnessbuddy.R;
+import com.example.simpletraining.MainMenuTraining;
+import com.example.simpletraining.R;
 
-public class LegsAndTriceps_Training extends AppCompatActivity {
 
-   private Button buttonEndTraining;
+public class FullBody_Training extends AppCompatActivity {
+
+    private Button buttonEndTraining;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_legs_and_triceps__training);
+        setContentView(R.layout.activity_full_body__training);
         buttonEndTraining = findViewById(R.id.buttonEndTrainingId);
+
         buttonEndTraining.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,12 +38,20 @@ public class LegsAndTriceps_Training extends AppCompatActivity {
                 startActivity(goToMainMenuTraining);
             }
         });
+
+    }
+
+    public void openLegPress(View view) {
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("https://www.youtube.com/results?search_query=leg+press+technique"));
+        intent.setPackage("com.google.android.youtube");
+        startActivity(intent);
     }
 
 
-    public void openWarmUp(View view) {
+    public void openLatPulldown(View view) {
         Intent intent = new Intent(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse("https://www.youtube.com/results?search_query=gym+warm+up+exercises+for+beginners"));
+        intent.setData(Uri.parse("https://www.youtube.com/results?search_query=lat+pulldown+technique"));
         intent.setPackage("com.google.android.youtube");
         startActivity(intent);
     }
@@ -47,29 +59,30 @@ public class LegsAndTriceps_Training extends AppCompatActivity {
 
     public void openBenchPress(View view) {
         Intent intent = new Intent(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse("https://www.youtube.com/results?search_query=squatr+technique"));
+        intent.setData(Uri.parse("https://www.youtube.com/results?search_query=bench+press+technique"));
         intent.setPackage("com.google.android.youtube");
         startActivity(intent);
     }
 
-    public void openSeatedCalfRaise(View view) {
+    public void openDumbbellShoulderPress(View view) {
         Intent intent = new Intent(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse("https://www.youtube.com/results?search_query=seated+calf+raise+technique"));
+        intent.setData(Uri.parse("https://www.youtube.com/results?search_query=dumbbell+shoulder+press+technique"));
         intent.setPackage("com.google.android.youtube");
         startActivity(intent);
     }
 
-    public void openCloseGripBenchPress(View view) {
+    public void openDumbbellBicepCurl(View view) {
         Intent intent = new Intent(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse("https://www.youtube.com/results?search_query=close+grip+bench+press+technique"));
+        intent.setData(Uri.parse("https://www.youtube.com/results?search_query=dumbbell+bicep+curl+technique"));
         intent.setPackage("com.google.android.youtube");
         startActivity(intent);
     }
 
-    public void openFrenchBenchPress(View view) {
+    public void openTricepsPushdownId(View view) {
         Intent intent = new Intent(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse("https://www.youtube.com/results?search_query=french+bench+press+technique"));
+        intent.setData(Uri.parse("https://www.youtube.com/results?search_query=tricep+push+down+technique"));
         intent.setPackage("com.google.android.youtube");
         startActivity(intent);
     }
+
 }

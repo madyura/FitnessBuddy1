@@ -1,4 +1,4 @@
-package com.example.fitnessbuddy.trainingsVeiws;
+package com.example.simpletraining.trainingsVeiws;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,8 +10,8 @@ import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.fitnessbuddy.MainMenuTraining;
-import com.example.fitnessbuddy.R;
+import com.example.simpletraining.MainMenuTraining;
+import com.example.simpletraining.R;
 
 
 

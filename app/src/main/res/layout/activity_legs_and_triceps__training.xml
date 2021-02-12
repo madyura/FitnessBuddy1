@@ -4,13 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ic_background_legsandtriceps"
+    app:layout_anchorGravity="center"
     tools:context=".trainingsVeiws.LegsAndTriceps_Training">
 
     <TextView
         android:id="@+id/textViewFitnessBuddyId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/app_name"
+        android:text="@string/legs_triceps"
+        android:textColor="@android:color/background_dark"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline10"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,6 +32,7 @@
         android:layout_height="676dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="4dp"
+        android:gravity="center|top"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -37,93 +41,102 @@
 
         <TextView
             android:id="@+id/textWarmUpId"
-            android:layout_width="370dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:background="#D7D8D8"
+            android:background="@drawable/round_button_rose"
+            android:gravity="center"
             android:onClick="openWarmUp"
             android:text="@string/warm_up"
+            android:textColor="@color/white"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textViewSquatsId"
-            android:layout_width="370dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:background="#D7D8D8"
+            android:background="@drawable/round_button_purple"
+            android:gravity="center"
             android:onClick="openBenchPress"
             android:text="@string/squats"
+            android:textColor="@color/white"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textViewSquatsRepsId"
-            android:layout_width="match_parent"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:gravity="center"
             android:text="@string/four_sets"
+            android:textColor="@android:color/background_dark"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textViewSeatedCalfRaiseId"
-            android:layout_width="370dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:background="#D7D8D8"
+            android:background="@drawable/round_button_orange"
+            android:gravity="center"
             android:onClick="openSeatedCalfRaise"
             android:text="@string/seated_calf_raise"
+            android:textColor="@color/white"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textViewSeatedCalfRaiseRepsId"
-            android:layout_width="match_parent"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:gravity="center"
             android:text="@string/four_sets"
+            android:textColor="@android:color/background_dark"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textViewCloseGripBenchPressId"
-            android:layout_width="370dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:background="#D7D8D8"
+            android:background="@drawable/round_button_yellow"
+            android:gravity="center"
             android:onClick="openCloseGripBenchPress"
             android:text="@string/close_grip_bench_press"
+            android:textColor="@color/white"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textViewCloseGripBenchePressRepsId"
-            android:layout_width="match_parent"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:gravity="center"
             android:text="@string/four_sets"
+            android:textColor="@android:color/background_dark"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textViewFrenchBenchPressId"
-            android:layout_width="370dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:background="#D7D8D8"
+            android:background="@drawable/round_button_blue"
+            android:gravity="center"
             android:onClick="openFrenchBenchPress"
             android:text="@string/french_bench_press"
+            android:textColor="@color/white"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textViewFrenchBenchPressRepsId"
-            android:layout_width="match_parent"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:gravity="center"
             android:text="@string/four_sets"
+            android:textColor="@android:color/background_dark"
             android:textSize="24sp" />
 
 
@@ -131,10 +144,12 @@
 
     <Button
         android:id="@+id/buttonEndTrainingId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
         android:layout_marginBottom="24dp"
+        android:background="@drawable/button_main"
         android:text="@string/endTraining"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

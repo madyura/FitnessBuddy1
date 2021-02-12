@@ -1,0 +1,49 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="414dp"
+    android:height="896dp"
+    android:viewportWidth="414"
+    android:viewportHeight="896">
+  <group>
+    <clip-path
+        android:pathData="M0,0h414v896h-414z"/>
+    <path
+        android:pathData="M0,0h414v896h-414z"
+        android:fillColor="#ffffff"/>
+    <path
+        android:pathData="M0,0h414v896h-414z"
+        android:fillColor="#ffffff"/>
+    <path
+        android:pathData="M46.5,65.5C46.5,83.725 31.725,98.5 13.5,98.5C-4.725,98.5 -19.5,83.725 -19.5,65.5C-19.5,47.275 -4.725,32.5 13.5,32.5C31.725,32.5 46.5,47.275 46.5,65.5Z"
+        android:strokeWidth="16"
+        android:fillColor="#00000000"
+        android:strokeColor="#C076EE"/>
+    <path
+        android:pathData="M-49,658m-178,0a178,178 0,1 1,356 0a178,178 0,1 1,-356 0"
+        android:strokeWidth="90"
+        android:fillColor="#00000000"
+        android:strokeColor="#2C88FE"/>
+    <path
+        android:pathData="M136.5,181.5m-38.5,0a38.5,38.5 0,1 1,77 0a38.5,38.5 0,1 1,-77 0"
+        android:strokeWidth="30"
+        android:fillColor="#00000000"
+        android:strokeColor="#F7C41C"/>
+    <path
+        android:pathData="M285.5,761.5m-16.5,0a16.5,16.5 0,1 1,33 0a16.5,16.5 0,1 1,-33 0"
+        android:fillColor="#FA5C91"/>
+    <path
+        android:pathData="M183,7.5C183,12.194 179.194,16 174.5,16C169.806,16 166,12.194 166,7.5C166,2.806 169.806,-1 174.5,-1C179.194,-1 183,2.806 183,7.5Z"
+        android:strokeWidth="6"
+        android:fillColor="#00000000"
+        android:strokeColor="#2C88FE"/>
+    <path
+        android:pathData="M406,674m-28,0a28,28 0,1 1,56 0a28,28 0,1 1,-56 0"
+        android:strokeWidth="10"
+        android:fillColor="#00000000"
+        android:strokeColor="#F7C41C"/>
+    <path
+        android:pathData="M492.5,243.5m-157.5,0a157.5,157.5 0,1 1,315 0a157.5,157.5 0,1 1,-315 0"
+        android:strokeWidth="86"
+        android:fillColor="#00000000"
+        android:strokeColor="#FA5C91"/>
+  </group>
+</vector>

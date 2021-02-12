@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ic_background_settings"
     tools:context=".Settings">
 
     <TextView
@@ -13,6 +14,7 @@
         android:gravity="center_vertical"
         android:paddingStart="16sp"
         android:text="Edit your datas"
+        android:textColor="@android:color/background_dark"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,6 +30,7 @@
         android:gravity="center_vertical"
         android:paddingStart="16sp"
         android:text="@string/reset_counter"
+        android:textColor="@android:color/background_dark"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,31 +58,17 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.3" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.4" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.5" />
-
     <TextView
         android:id="@+id/textViewSettingsId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/settings"
+        android:textColor="@android:color/background_dark"
         android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

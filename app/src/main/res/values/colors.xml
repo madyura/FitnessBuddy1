@@ -3,4 +3,13 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="button_main">#1e94e6</color>
+    <color name="button_youtube">#C076EE</color>
+    <color name="white">#ffffff</color>
+    <color name="blue">#2C88FE</color>
+    <color name="rose">#FA5C91</color>
+    <color name="purple">#C076EE</color>
+    <color name="orange">#F7AD1C</color>
+    <color name="yellow">#F7C41C</color>
+
 </resources>

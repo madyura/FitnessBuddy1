@@ -52,7 +52,7 @@ public class MainMenuMeal extends AppCompatActivity {
         buttonSeeMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent openSeeMenu = new Intent(getApplicationContext(), Menu.class);
+                Intent openSeeMenu = new Intent(getApplicationContext(), MealMenu.class);
                 startActivity(openSeeMenu);
             }
         });

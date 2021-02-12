@@ -24,7 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Menu" />
+        <activity android:name=".MealMenu" />
         <activity android:name=".MainMenuTraining" />
         <activity android:name=".firstlogin.ProfileDetails2" />
         <activity android:name=".firstlogin.ProfileDetails1" />

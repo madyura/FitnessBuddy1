@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ic_background_mainmenumeal"
     tools:context=".MainMenuMeal">
 
     <Button
@@ -12,7 +13,7 @@
         android:layout_height="42dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/ic_settings"
+        android:background="@android:drawable/ic_menu_sort_by_size"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -21,6 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
+        android:textColor="@android:color/black"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline10"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,32 +37,18 @@
         app:layout_constraintGuide_percent="0.1" />
 
     <TextView
-        android:id="@+id/textViewButtonMealId"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="#009688"
-        android:gravity="center"
-        android:text="@string/meal"
-        android:textAllCaps="true"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textViewButtonTrainingId"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guidelineBottom" />
-    <TextView
         android:id="@+id/textViewButtonTrainingId"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="#03A9F4"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_main"
         android:gravity="center"
         android:text="@string/training"
         android:textAllCaps="true"
         android:textColor="#FFFFFF"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/textViewButtonMealId"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guidelineBottom" />
 
     <androidx.constraintlayout.widget.Guideline
@@ -77,6 +65,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:text="@string/goal"
+        android:textColor="@android:color/background_dark"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline10" />
@@ -88,6 +77,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="@string/proteins"
+        android:textColor="@android:color/background_dark"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewMealGoalId" />
@@ -98,8 +88,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:textSize="24sp"
         android:text="@string/carbs"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewMealProteinsId" />
 
@@ -110,15 +101,18 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="@string/fats"
+        android:textColor="@android:color/background_dark"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewMealCarbsId" />
 
     <Button
         android:id="@+id/buttonSeeMenuId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_main"
         android:text="see menu"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/textViewButtonTrainingId"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -131,6 +125,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="@string/calories"
+        android:textColor="@android:color/background_dark"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewMealFatId" />

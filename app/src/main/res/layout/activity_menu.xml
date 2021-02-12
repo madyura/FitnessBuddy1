@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Menu">
+    android:background="@drawable/ic_background_mealmenu"
+    tools:context=".MealMenu">
 
     <TextView
         android:id="@+id/textViewFitnessBuddyId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
+        android:textColor="@android:color/background_dark"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline10"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,7 +31,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fillViewport="true"
-        app:layout_constraintTop_toBottomOf="@+id/textViewFitnessBuddyId">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline10"
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
             android:id="@+id/linearLayoutMenuId"
@@ -46,6 +53,7 @@
                 android:textAlignment="center"
 
                 android:textAllCaps="true"
+                android:textColor="@android:color/background_dark"
                 android:textSize="22sp" />
 
             <LinearLayout
@@ -60,6 +68,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/oatmeal"
+                    android:textColor="@android:color/background_dark"
                     android:textSize="20sp" />
 
                 <TextView
@@ -67,6 +76,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/milk"
+                    android:textColor="@android:color/background_dark"
                     android:textSize="20sp" />
 
                 <TextView
@@ -74,6 +84,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/dried_fruits"
+                    android:textColor="@android:color/background_dark"
                     android:textSize="20sp" />
 
                 <TextView
@@ -81,6 +92,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/eggs"
+                    android:textColor="@android:color/background_dark"
                     android:textSize="20sp" />
             </LinearLayout>
 
@@ -92,6 +104,7 @@
                 android:text="@string/first_snack"
                 android:textAlignment="center"
                 android:textAllCaps="true"
+                android:textColor="@android:color/background_dark"
                 android:textSize="20dp" />
 
             <LinearLayout
@@ -105,6 +118,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/dried_rice"
+                    android:textColor="@android:color/background_dark"
                     android:textSize="20sp" />
 
                 <TextView
@@ -112,6 +126,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/ham"
+                    android:textColor="@android:color/background_dark"
                     android:textSize="20sp" />
 
                 <TextView
@@ -119,6 +134,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/pickle"
+                    android:textColor="@android:color/background_dark"
                     android:textSize="20sp" />
             </LinearLayout>
 
@@ -130,6 +146,7 @@
                 android:text="@string/lunch"
                 android:textAlignment="center"
                 android:textAllCaps="true"
+                android:textColor="@android:color/background_dark"
                 android:textSize="20dp" />
 
             <LinearLayout
@@ -144,6 +161,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/bulgur"
+                    android:textColor="@android:color/background_dark"
                     android:textSize="20sp" />
 
                 <TextView
@@ -151,6 +169,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/chicken_breast"
+                    android:textColor="@android:color/background_dark"
                     android:textSize="20sp" />
 
                 <TextView
@@ -158,6 +177,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/salad"
+                    android:textColor="@android:color/background_dark"
                     android:textSize="20sp" />
             </LinearLayout>
 
@@ -169,6 +189,7 @@
                 android:text="@string/second_snack"
                 android:textAlignment="center"
                 android:textAllCaps="true"
+                android:textColor="@android:color/background_dark"
                 android:textSize="20dp" />
 
             <LinearLayout
@@ -183,6 +204,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/quark"
+                    android:textColor="@android:color/background_dark"
                     android:textSize="20sp" />
 
                 <TextView
@@ -190,6 +212,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/apple"
+                    android:textColor="@android:color/background_dark"
                     android:textSize="20sp" />
             </LinearLayout>
 
@@ -201,6 +224,7 @@
                 android:text="@string/dinner"
                 android:textAlignment="center"
                 android:textAllCaps="true"
+                android:textColor="@android:color/background_dark"
                 android:textSize="20dp" />
 
             <LinearLayout
@@ -214,6 +238,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/fish"
+                    android:textColor="@android:color/background_dark"
                     android:textSize="20sp" />
 
                 <TextView
@@ -221,6 +246,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/rice"
+                    android:textColor="@android:color/background_dark"
                     android:textSize="20sp" />
 
                 <TextView
@@ -229,6 +255,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="15dp"
                     android:text="@string/salad"
+                    android:textColor="@android:color/background_dark"
                     android:textSize="20sp" />
             </LinearLayout>
 

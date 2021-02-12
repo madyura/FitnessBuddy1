@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_activity_main"
     tools:context=".firstlogin.MainActivity">
 
     <TextView
@@ -12,6 +13,7 @@
         android:layout_height="0dp"
         android:gravity="center"
         android:text="@string/welcome"
+        android:textColor="@android:color/background_dark"
         android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline10"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,12 +31,16 @@
         android:id="@+id/textViewWelcomeInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/welcome_info"
         android:gravity="center"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        android:text="@string/welcome_info"
+        android:textColor="@android:color/background_dark"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewWelcome" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewWelcome"
+        app:layout_constraintVertical_bias="0.276" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline1"
@@ -45,16 +51,17 @@
 
     <Button
         android:id="@+id/buttonLetsDoThis"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:text="@string/lets_do_this_button"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_main"
         android:onClick="openProfileDetails1Activity"
+        android:text="@string/lets_do_this_button"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline1" />
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

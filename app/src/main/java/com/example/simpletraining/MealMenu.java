@@ -9,7 +9,7 @@ import android.preference.PreferenceManager;
 import android.widget.TextView;
 
 
-public class Menu extends AppCompatActivity {
+public class MealMenu extends AppCompatActivity {
 
     private TextView textViewBreakfast;
     private TextView textViewFirstSnack;
@@ -34,7 +34,7 @@ public class Menu extends AppCompatActivity {
 
 
 
-//     Formula for calculating amount of food: ((процент каллорийности конкретного продукта
+//     Formula for calculating amount of food: ((callories of concrete product
 //     (из таблицы в экселе) из нормы рациона по КБЖУ умноженный на каллории человека, деленный на
 //     количество каллорий в одном грамме продукта)
 
